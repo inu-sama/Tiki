@@ -213,13 +213,61 @@ nav a{
     justify-content: space-between;
 }
 .promote-left{
+    position: relative;
     cursor: pointer;
-    background: url('./images/promotion.jpg') no-repeat;
-    background-size: cover;
+    overflow: hidden;
     background-position: center;
     height: 250px;
     width: 69%;
     border-radius: 10px;
+    background: #fff;
+    padding: 0;
+    display: flex;
+    object-fit: contain;
+    justify-content: space-around;
+}
+.promote-left img{
+    width: 100%;
+    height: 100%;
+}
+.carousel{
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    width: 30%;
+    bottom: 10px;
+}
+.carousel img{
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    width: 40px;
+    border-radius: 5px;
+    height: 2px;
+}
+.carousel img.active{
+    background: #fff;
+}
+.promote-left button{
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    font-size: 15px;
+    border-radius: 50%;
+    margin: 15% 0;
+    background: rgba(255, 255, 255, 0.1);
+    border: none;
+    outline: none;
+    color: rgba(255, 255, 255, 0.2);
+    cursor: pointer;
+}
+.promote-left button.active{
+    background: rgba(255, 255, 255, 0.3);
+    color: #fff;
+}
+.promote-left .left{
+    left: 10px;
+}
+.promote-left .right{
+    right: 10px;
 }
 .promote-right{
     background: url('./images/voucher-2.jpg') no-repeat;
