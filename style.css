@@ -84,7 +84,7 @@ nav{
     right: 163px;
     top: 45px;
     padding: 10px 0;
-    
+    display: none;
 }
 .account p{
     padding: 10px 15px;
