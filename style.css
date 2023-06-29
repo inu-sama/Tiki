@@ -290,6 +290,7 @@ nav a{
     height: 25%;
     padding: 3% 6%;
     color: #fff;
+    justify-content: space-around;
 }
 .product.one{
     background: url('./images/product-2.jpg') no-repeat;
@@ -335,4 +336,98 @@ nav a{
     margin-bottom: 2%;
     margin-left: 5%;
 }
-
+.product.dsale{
+    padding: 0;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    border: none;
+    box-shadow: none;
+}
+.product.dsale p{
+    position: absolute;
+    top: 73%;
+    font-size: 17px;
+    font-weight: 550;
+    color: #ff3333;
+    width: 100%;
+    text-align: center;
+}
+.product.dsale::after{
+    content: '';
+    position: absolute;
+    background: #ffcccc;
+    border-radius: 4px;
+    font-size: 12px;
+    top: 2%;
+    left: 2%;
+    color: #ff3333;
+    font-weight: 600;
+    padding: 2%;
+}
+.product.dsale.one::after{
+    content: '-36%';
+}
+.product.dsale.two::after{
+    content: '-21%';
+}
+.product.dsale.three::after{
+    content: '-29%';
+}
+.product.dsale.four::after{
+    content: '-41%';
+}
+.product.dsale.five::after{
+    content: '-34%';
+}
+.product.dsale.six::after{
+    content: '-28%';
+}
+.progress{
+    position: absolute;
+    display: block;
+    align-self: center;
+    width: 100%;
+    height: 20px;
+    bottom: 5%;
+    border-radius: 10px;
+    background: #ff9999;
+    overflow: hidden;
+    color: #fff;
+}
+.progress a{
+    position: absolute;
+    text-decoration: none;
+    color: #fff;
+    font-size: 12px;
+    text-align: center;
+    width: 100%;
+    margin-top: 1.5%;
+    z-index: 100;
+}
+.progress::after{
+    content: '';
+    position: absolute;
+    height: 100%;
+    background: #ff3333;
+    
+    border-radius: 10px;
+}
+.product.dsale.one .progress::after{
+    width: 30px;
+}
+.product.dsale.two .progress::after{
+    width: 20px;
+}
+.product.dsale.three .progress::after{
+    width: 50px;
+}
+.product.dsale.four .progress::after{
+    width: 30px;
+}
+.product.dsale.five .progress::after{
+    width: 70px;
+}
+.product.dsale.six .progress::after{
+    width: 20px;
+}
