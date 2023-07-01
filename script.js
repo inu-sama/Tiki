@@ -73,4 +73,11 @@ function BtnOff(){
     btnRight.classList.remove('active')
 }
 
+function AccountInfo(){
+    document.querySelector('.nav-link .account').classList.add('active')
+}
+function AccountInfoOff(){
+    document.querySelector('.nav-link .account').classList.remove('active')
+}
+
 
