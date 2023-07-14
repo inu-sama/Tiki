@@ -160,15 +160,27 @@ nav a{
     position: relative;
 }
 
-.left-sidebar{
-    flex-basis: 18%;/*
+.left-side{
     position: sticky;
-    top: 15px;*/
+    overflow-y: scroll;
+    
+    top: 15px;
+    height: 100vh;
+}
+
+.left-side::-webkit-scrollbar {
+    display: none;
+}
+.left-sidebar{
+    flex-basis: 18%;
     align-self: flex-start;
     background: #fff;
     padding: 10px 20px;
     border-radius: 6px;
     color: #626262;
+}
+.left-sidebar.a{
+    margin-bottom: 10vh;
 }
 
 .utilities a{
@@ -262,6 +274,7 @@ nav a{
     color: rgba(255, 255, 255, 0.2);
     cursor: pointer;
 }
+
 .promote-left button.active{
     background: rgba(255, 255, 255, 0.3);
     color: #fff;
@@ -581,6 +594,7 @@ nav a{
 .lower{
     bottom: 0;
 }
+/* --------------------------colorful box unfinished----------------- */
 .product .main-img{
     position: absolute;
     width: 90%;
@@ -621,4 +635,105 @@ nav a{
     left: 7%;
     border-radius: 10px;
     background: #fff;
+}
+.suggestion{
+    position: relative;
+    
+}
+.suggest{
+    position: sticky;
+    top: 15px;
+    width: 100%;
+    height: 130px;
+    background: #fff;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+/* .pad{
+    position: sticky;
+    top: 0;
+    width: 100%;
+    height: 155px;
+    background: #efefef;
+} */
+.suggest p{
+    font-size: 15px;
+    font-weight: 600;
+
+    padding: 15px;
+}
+.suggest-list{
+    position: absolute;
+    display: flex;
+    width: 100%;
+
+    height: 80px;
+    bottom: 0;
+}
+.suggest-list .sug{
+    display: flex;
+    width: 16.7%;
+    position: relative;
+    justify-content: center;
+}
+.suggest-list .sug:hover{
+    background: #E0E0E0;
+}
+.suggest-list .sug:active{
+    background: #C0C0C0;
+}
+.suggest-list .sug.on{
+    background: #DBEBFF;
+    border-bottom: 1px solid #1876f2
+}
+.suggest-list .sug.on:hover{
+    background: #cce5ff;
+}
+.suggest-list .sug.on:active{
+    background: #99CCFF;
+}
+.sug img{
+    height: 50%;
+    background: #fff;
+    padding: 1%;
+    margin: 5%;
+}
+.sug p{
+    width: 100%;
+
+    height: 20%;
+    position: absolute;
+    bottom: 0;
+    text-align: center;
+    font-weight: 500;
+    color: #626262;
+    font-size: 12px;
+    margin-bottom: 10px;
+}
+.sug.on p{
+    color: #1876f2;
+}
+.stuff-container{
+    width: 100%;
+}
+.row{
+    width: 100%;
+    justify-content: space-between;
+    display: flex;
+    margin-top: 10px;
+}
+.row .stuff{
+    height: 350px;
+    width: 16%;
+    background: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.row .stuff.big{
+    width: 32.8%;
+}
+.stuff.big .vid{
+    width: 100%;
+    height: 50%;
+    border: 1px solid;
 }

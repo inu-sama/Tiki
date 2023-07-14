@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tiki</title>
+    <link rel="icon" type="image/x-icon" href="./images/icon.jpg">
+    <link rel="stylesheet" href="account.css">
+    <script src="https://kit.fontawesome.com/3e21e075ef.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <nav>
+        <img src="./images/logo.png" class="logo">
+        <div class="search-box">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <input type="text" placeholder="Bạn cần gì?">
+            <a class="search-btn">Tìm kiếm</a><br>
+        </div>
+        
+        <div class="nav-link home">
+            <a href="index.html">
+                <i class="fa-solid fa-house"></i>
+                Trang chủ
+            </a>
+        </div>
+        <div class="nav-link astra">
+            <a href="#">
+                <i class="fa-solid fa-crown"></i>
+                Astra
+            </a>
+        </div>
+
+
+        <div class="nav-link account1" onmouseover="AccountInfo()" onmouseout="AccountInfoOff()">
+            <a href="#" style="color: #1876f2;">
+                <i class="fa-solid fa-user"></i>
+                Tài khoản
+            </a>
+            <div class="account">
+                <a href="#"><p>Thông tin tài khoản</p></a>
+                <a href="#"><p>Đơn hàng của tôi</p></a>
+                <a href="#"><p>Đăng xuất</p></a>
+            </div>
+        </div>
+        
+
+        </div>
+
+
+        <i class="fa-solid fa-grip-lines-vertical" style="color: #E0E0E0;"></i>
+        <div class="nav-link cart">
+            <a href="#" style="color: #1876f2;"><i class="fa-solid fa-cart-shopping"></i></a>
+        </div>
+        
+
+        
+    </nav>
+    <div class="address">
+        <p>
+            <i class="fa-solid fa-regular fa-location-dot"></i>
+            Giao đến: <a href="#">P.8, Q.6, Hồ Chí Minh</a>
+        </p>
+    </div>
+    <div class="extra">
+        <a href="#">
+            <b style="color:#1876f2; font-weight: 800;"><i>Freeship</i></b> mỗi ngày, tự động áp dụng không cần săn mã 
+            <i class="fa-solid fa-chevron-right"></i>
+        </a>
+    </div>
+
+
+
+    <script src="script.js"></script>
+</body>
+</html>

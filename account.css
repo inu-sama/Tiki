@@ -1,0 +1,155 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'poppins', sans-serif;
+    box-sizing: border-box;
+}
+body{
+    background: #efefef;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px 5%;
+    top: 0;
+    z-index: 100;
+    width: 100%;
+    height: 50px;
+    background: #fff;
+}
+.logo{
+    width: 50px;
+    margin-right: 45px;
+    cursor: pointer;
+}
+
+.search-box{
+    background: transparent;
+    width: 800px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    padding: 0 0 0 15px;
+    border: 0.1px solid lightgrey;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.search-box i{
+    width: 18px;
+}
+.search-box input{
+    width: 100%;
+    background: transparent;
+    padding: 10px;
+    outline: none;
+    border: none;
+}
+.search-box .search-btn{
+    background: transparent;
+    outline: none;
+    color: #1876f2;
+    height: 100%;
+    width: 100px;
+    font-size: 15px;
+    padding: 10px 13px;
+    margin: 0;
+    justify-self: center;
+    cursor: pointer;
+    border-left: 0.1px solid lightgrey;
+}
+.search-btn:hover{
+    background: #CCE5FF;
+}
+.search-btn:active{
+    background: #99CCFF;
+}
+.nav-link{
+    display: flex;
+    padding: 10px 10px;
+    margin: 0;
+    border-radius: 10px;
+    cursor: pointer;
+    
+}
+
+.account{
+    background: #fff;
+    align-items: center;
+    width: 250px;
+    position: absolute;
+    box-shadow: 0 0 4px #626262;
+    z-index: 100;
+    border-radius: 10px;
+    right: 163px;
+    top: 45px;
+    padding: 10px 0;
+    display: none;
+}
+.account.active{
+    display: block;
+}
+.account p{
+    padding: 10px 15px;
+    width: 100%;
+    
+    font-size: 15px;
+}
+.account p:hover{
+    background: #E0E0E0;
+}
+.account p:active{
+    background: #C0C0C0;
+}
+.account a{
+    color: #000;
+}
+
+nav a{
+    text-decoration: none;
+    color: #626262;
+}
+
+.nav-link:hover{
+    background: #E0E0E0;
+    display: block;
+}
+.nav-link:active{
+    background: #C0C0C0;
+}
+.nav-link.account1:hover, .nav-link.cart:hover{
+    background: #CCE5FF;
+}
+.nav-link.account1:active, .nav-link.cart:active{
+    background: #99CCFF;
+}
+.extra{
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    background: #FFFF99;
+    display: flex;
+    height: 40px;
+}
+.extra a{
+    text-decoration: none;
+    color: black;
+}
+.address{
+    display: flex;
+    padding-right: 80px;
+    justify-content: right;
+    height: 25px;
+    align-items: center;
+    color: #626262;
+    font-size: 15px;
+    background: #fff;
+}
+.address p{
+    cursor: pointer;
+}
+.address a{
+    color: black;
+    font-weight: 600
+
+}

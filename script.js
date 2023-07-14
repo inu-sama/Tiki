@@ -1,3 +1,20 @@
+var suggestItem = document.querySelectorAll('.suggest-list .sug')
+
+ChooseSuggestion(0)
+function ChooseSuggestion(index){
+    suggestItem.forEach(item=>{
+        item.classList.remove('on')
+    })
+    suggestItem[index].classList.add('on')
+}
+suggestItem.forEach((sugItem, index)=>{
+    sugItem.addEventListener('click', e=>{
+        ChooseSuggestion(index)
+    })
+})
+
+
+
 
 
 setInterval(function(){
