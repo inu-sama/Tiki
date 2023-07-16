@@ -98,3 +98,27 @@ function AccountInfoOff(){
 }
 
 
+var suggestionList = document.querySelectorAll('.stuff-container')
+var sug = document.querySelectorAll('.sug')
+
+Suggestion(0)
+function Suggestion(index){
+    suggestionList.forEach(item=>{
+        item.classList.remove('active')
+    })
+
+
+    suggestionList[index].classList.add('active')
+    console.log(suggestionList[index])
+    
+}
+
+sug.forEach((item, index)=>{
+    item.addEventListener('click', e=>{
+        Suggestion(index)
+    })
+})
+
+
+
+

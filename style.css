@@ -640,6 +640,7 @@ nav a{
     position: relative;
     
 }
+
 .suggest{
     position: sticky;
     top: 15px;
@@ -648,14 +649,9 @@ nav a{
     background: #fff;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
+    z-index: 100;
 }
-/* .pad{
-    position: sticky;
-    top: 0;
-    width: 100%;
-    height: 155px;
-    background: #efefef;
-} */
+
 .suggest p{
     font-size: 15px;
     font-weight: 600;
@@ -713,8 +709,37 @@ nav a{
 .sug.on p{
     color: #1876f2;
 }
+.stuff-box{
+    position: sticky;
+    display: flex;
+    width: 600%;
+}
 .stuff-container{
     width: 100%;
+    transform: scale(0);
+}
+.stuff-container.for-you.active{
+    transform: scale(1);
+}
+.stuff-container.daily-cheap.active{
+    transform: scale(1);
+    transform: translateX(-100%);
+}
+.stuff-container.freeship.active{
+    transform: scale(1);
+    transform: translateX(-200%);
+}
+.stuff-container.astra-plus.active{
+    transform: scale(1);
+    transform: translateX(-300%);
+}
+.stuff-container.digital-service.active{
+    transform: scale(1);
+    transform: translateX(-400%);
+}
+.stuff-container.hot-deal.active{
+    transform: scale(1);
+    transform: translateX(-500%);
 }
 .row{
     width: 100%;
@@ -736,4 +761,6 @@ nav a{
     width: 100%;
     height: 50%;
     border: 1px solid;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
 }

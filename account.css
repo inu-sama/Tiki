@@ -153,3 +153,81 @@ nav a{
     font-weight: 600
 
 }
+
+.page-info{
+    height: 50px;
+}
+
+.container{
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    width: 100%;
+    height: 200vh;
+    padding: 0 10%;
+}
+.left-side{
+    background: #fff;
+    
+    width: 20%;
+}
+.right-side{
+    
+    width: 78.5%;
+}
+.right-side p{
+
+    font-size: 22px;
+    width: 100%;
+
+    padding: 15px 0;
+}
+.account-info{
+    width: 100%;
+    border-radius: 10px;
+    background: #fff;
+    height: 80vh;
+    padding: 20px;
+    display: flex;
+}
+.personal-info{
+    position: relative;
+    width: 60%;
+    border-right: 1px solid #C0C0C0;
+    padding: 0 0;
+}
+.personal-info p{
+    font-size: 17px;
+    color: #626262;
+
+    padding: 0;
+}
+.personal-info img{
+    position: relative;
+    width: 110px;
+    border-radius: 50%;
+    border: 4px solid #cce5ff;
+}
+
+.name{
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+.input-detail{
+    width: 100%;
+    position: relative;
+
+    border-radius: 10px;
+}
+.input-detail label{
+    margin: 10px;
+    color: #626262;
+    font-size: 15px;
+}
+.input-detail input{
+    margin: 10px;
+    margin-left: 100px;
+    width: 200px;
+    height: 30px;
+}
