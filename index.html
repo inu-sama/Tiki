@@ -9,51 +9,45 @@
     <script src="https://kit.fontawesome.com/3e21e075ef.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <nav>
-        <a href="index.html"><img src="./images/logo.png" class="logo"></a>
+    <header>
+        <a href="index.html">
+            <img src="./images/logo.png" class="logo"/>
+        </a>
         <div class="search-box">
             <i class="fa-solid fa-magnifying-glass"></i>
-            <input type="text" placeholder="Bạn cần gì?">
-            <a class="search-btn">Tìm kiếm</a><br>
+            <input type="text" placeholder="Bạn cần gì?" />
+            <a class="search-btn"><p>Tìm kiếm</p></a>
         </div>
-        
-        <div class="nav-link home">
-            <a href="index.html" style="color: #1876f2;">
-                <i class="fa-solid fa-house"></i>
-                Trang chủ
-            </a>
-        </div>
-        <div class="nav-link astra">
-            <a href="#">
-                <i class="fa-solid fa-crown"></i>
-                Astra
-            </a>
-        </div>
-
-
-        <div class="nav-link account1" onmouseover="AccountInfo()" onmouseout="AccountInfoOff()">
-            <a href="#">
-                <i class="fa-solid fa-user"></i>
-                Tài khoản
-            </a>
-            <div class="account">
-                <a href="account.html"><p>Thông tin tài khoản</p></a>
-                <a href="#"><p>Đơn hàng của tôi</p></a>
-                <a href="#"><p>Đăng xuất</p></a>
+        <nav>
+            <div class="nav-link home">
+                <a href="index.html">
+                    <i class="fa-solid fa-house"></i>
+                    &nbsp;Trang chủ
+                </a>
             </div>
-        </div>
-        
-
-
-
-        <i class="fa-solid fa-grip-lines-vertical" style="color: #E0E0E0;"></i>
-        <div class="nav-link cart">
-            <a href="#" style="color: #1876f2;"><i class="fa-solid fa-cart-shopping"></i></a>
-        </div>
-        
-
-        
-    </nav>
+            <div class="nav-link astra">
+                <a href="#">
+                    <i class="fa-solid fa-crown"></i>
+                    &nbsp;Astra
+                </a>
+            </div>
+            <div class="nav-link account">
+                <a href="#">
+                    <i class="fa-solid fa-user"></i>
+                    &nbsp;Tài khoản
+                </a>
+                <div class="account-dropbar">
+                    <a href="account.html"><p>Thông tin tài khoản</p></a>
+                    <a href="#"><p>Đơn hàng của tôi</p></a>
+                    <a href="#"><p>Đăng xuất</p></a>
+                </div>
+            </div>
+            <i class="fa-solid fa-grip-lines-vertical"></i>
+            <div class="nav-link cart">
+                <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+            </div>
+        </nav>
+    </header>
     <div class="address">
         <p>
             <i class="fa-solid fa-regular fa-location-dot"></i>
@@ -62,7 +56,7 @@
     </div>
     <div class="extra">
         <a href="#">
-            <b style="color:#1876f2; font-weight: 800;"><i>Freeship</i></b> mỗi ngày, tự động áp dụng không cần săn mã 
+            <i style="color:#1876f2; font-weight: 900;">Freeship</i> mỗi ngày, tự động áp dụng không cần săn mã 
             <i class="fa-solid fa-chevron-right"></i>
         </a>
     </div>

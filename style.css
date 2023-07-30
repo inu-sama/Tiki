@@ -3,30 +3,40 @@
     padding: 0;
     font-family: 'poppins', sans-serif;
     box-sizing: border-box;
+    font-size: 1rem;
 }
 body{
     background: #efefef;
+    width: 16in;
+}
+header{
+    padding: 5px 0 5px 4%;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    /* border: 1px solid; */
+    background: #fff;
+    align-items: center;
 }
 nav{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 5px 5%;
+    padding: 5px 3%;
     top: 0;
     z-index: 100;
-    width: 100%;
+    width: 60%;
     height: 50px;
-    background: #fff;
+    /* border: 1px solid; */
 }
 .logo{
-    width: 50px;
+    width: 57px;
     margin-right: 45px;
     cursor: pointer;
 }
-
 .search-box{
     background: transparent;
-    width: 800px;
+    width: 100%;
     border-radius: 5px;
     display: flex;
     align-items: center;
@@ -34,6 +44,7 @@ nav{
     border: 0.1px solid lightgrey;
     border-radius: 10px;
     overflow: hidden;
+    height: 40px;
 }
 .search-box i{
     width: 18px;
@@ -52,11 +63,24 @@ nav{
     height: 100%;
     width: 100px;
     font-size: 15px;
-    padding: 10px 13px;
+    /* padding: 10px 13px; */
     margin: 0;
+    padding: auto;
     justify-self: center;
     cursor: pointer;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    /* border: 1px solid; */
+}
+.search-box .search-btn p{
     border-left: 0.1px solid lightgrey;
+    margin: auto;
+    /* border: 1px solid; */
+    width: 100%;
+    height: 60%;
+    text-align: center;
+    padding: 2.5px 0;
 }
 .search-btn:hover{
     background: #CCE5FF;
@@ -72,39 +96,6 @@ nav{
     cursor: pointer;
     
 }
-
-.account{
-    background: #fff;
-    align-items: center;
-    width: 250px;
-    position: absolute;
-    box-shadow: 0 0 4px #626262;
-    z-index: 100;
-    border-radius: 10px;
-    right: 163px;
-    top: 45px;
-    padding: 10px 0;
-    display: none;
-}
-.account.active{
-    display: block;
-}
-.account p{
-    padding: 10px 15px;
-    width: 100%;
-    
-    font-size: 15px;
-}
-.account p:hover{
-    background: #E0E0E0;
-}
-.account p:active{
-    background: #C0C0C0;
-}
-.account a{
-    color: #000;
-}
-
 nav a{
     text-decoration: none;
     color: #626262;
@@ -117,11 +108,45 @@ nav a{
 .nav-link:active{
     background: #C0C0C0;
 }
+.nav-link.home a, .nav-link.cart a{
+    color: #1876f2;
+}
 .nav-link.home:hover, .nav-link.cart:hover{
     background: #CCE5FF;
 }
 .nav-link.home:active, .nav-link.cart:active{
     background: #99CCFF;
+}
+.account-dropbar{
+    background: #fff;
+    align-items: center;
+    width: 250px;
+    position: absolute;
+    box-shadow: 0 0 4px #626262;
+    z-index: 100;
+    border-radius: 10px;
+    right: 9%;
+    top: 50px;
+    padding: 10px 0;
+    display: none;
+}
+.account-dropbar.active{
+    display: block;
+}
+.account-dropbar p{
+    padding: 10px 15px;
+    width: 100%;
+    
+    font-size: 15px;
+}
+.account-dropbar p:hover{
+    background: #E0E0E0;
+}
+.account-dropbar p:active{
+    background: #C0C0C0;
+}
+.account-dropbar a{
+    color: #000;
 }
 .extra{
     align-items: center;
@@ -137,13 +162,15 @@ nav a{
 }
 .address{
     display: flex;
-    padding-right: 80px;
+    padding-right: 3%;
     justify-content: right;
-    height: 25px;
+    height: 30px;
     align-items: center;
     color: #626262;
-    font-size: 15px;
+    /* font-size: 1rem; */
     background: #fff;
+    width: 100%;
+    /* border: 1px solid; */
 }
 .address p{
     cursor: pointer;
@@ -173,6 +200,7 @@ nav a{
 }
 .left-sidebar{
     flex-basis: 18%;
+    /* width: 100%; */
     align-self: flex-start;
     background: #fff;
     padding: 10px 20px;

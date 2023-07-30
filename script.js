@@ -91,11 +91,13 @@ function BtnOff(){
 }
 
 function AccountInfo(){
-    document.querySelector('.nav-link .account').classList.add('active')
+    document.querySelector('.nav-link .account-dropbar').classList.add('active')
 }
+document.querySelector('.account').addEventListener('mouseover', AccountInfo)
 function AccountInfoOff(){
-    document.querySelector('.nav-link .account').classList.remove('active')
+    document.querySelector('.nav-link .account-dropbar').classList.remove('active')
 }
+document.querySelector('.account').addEventListener('mouseout', AccountInfoOff)
 
 
 var suggestionList = document.querySelectorAll('.stuff-container')
@@ -106,11 +108,8 @@ function Suggestion(index){
     suggestionList.forEach(item=>{
         item.classList.remove('active')
     })
-
-
     suggestionList[index].classList.add('active')
     console.log(suggestionList[index])
-    
 }
 
 sug.forEach((item, index)=>{
