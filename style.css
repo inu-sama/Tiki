@@ -9,6 +9,11 @@ body{
     background: #efefef;
     width: 16in;
 }
+@media screen {
+    body{
+        width: 16in;
+    }
+}
 header{
     padding: 5px 0 5px 4%;
     display: flex;
