@@ -8,10 +8,12 @@
 body{
     background: #efefef;
     width: 16in;
+    overflow-x: hidden;
 }
 @media screen {
     body{
         width: 16in;
+        overflow-x: hidden;
     }
 }
 header{
